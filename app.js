@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 // New Code
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/nodetest1');
+//var db = monk('localhost:27017/nodetest1');
+var db = monk('mongodb://wsp-mongo:luIKUrh1Y6HSiE8HU1hmbsmysHny26P7qa1viIFCRzvoaq3KfJG8oex6CJKcaFG4LyAxvfEHM0BGcBjZxkgZpg==@wsp-mongo.documents.azure.com:10255/?ssl=true&replicaSet=globaldb');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
